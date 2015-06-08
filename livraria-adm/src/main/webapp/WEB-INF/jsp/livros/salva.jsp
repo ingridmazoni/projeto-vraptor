@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color:MistyRose">
 	<h2>Livro adicionado com sucesso!</h2>
 		<p>Veja aqui a
 			<a href="${linkTo[LivrosController].lista}">lista de todos os livros</a>

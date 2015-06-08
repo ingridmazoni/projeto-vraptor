@@ -5,9 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 </head>
-<body>
-	<form action="<c:url value="/livros/salva"/>" method="post">
+<body style="background-color:MistyRose">
+
+	<form  action="<c:url value="/livros/salva"/>" method="post">
 		<h2>Formulário de cadastro de livros</h2>
 		<ul>
 			<li>Titulo: <br/>	
