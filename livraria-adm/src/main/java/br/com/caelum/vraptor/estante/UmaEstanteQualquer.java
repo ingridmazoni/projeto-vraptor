@@ -1,6 +1,5 @@
-package br.com.caelum.vraptor.daoImplementation;
+package br.com.caelum.vraptor.estante;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import br.com.caelum.vraptor.entity.Livro;

@@ -2,11 +2,9 @@ package br.com.caelum.vraptor.controller;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.daoImplementation.UmaEstanteQualquer;
+import br.com.caelum.vraptor.estante.UmaEstanteNoBancoDeDados;
 import br.com.caelum.vraptor.entity.Livro;
 import br.com.caelum.vraptor.repository.Estante;
 
@@ -15,7 +13,7 @@ public class LivrosController {
 	private  Estante estante;
 	
 	public LivrosController() {
-		estante = new UmaEstanteQualquer();
+		estante = new UmaEstanteNoBancoDeDados(null);
 	}
 
 	
