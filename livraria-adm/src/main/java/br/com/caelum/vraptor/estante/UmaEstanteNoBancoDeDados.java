@@ -2,11 +2,13 @@ package br.com.caelum.vraptor.estante;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import br.com.caelum.vraptor.dao.LivroDao;
 import br.com.caelum.vraptor.entity.Livro;
 import br.com.caelum.vraptor.repository.Estante;
 
-
+@Resource
 public class UmaEstanteNoBancoDeDados implements Estante{
 	
 	private final LivroDao dao;

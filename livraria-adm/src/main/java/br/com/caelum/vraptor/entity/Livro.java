@@ -3,13 +3,34 @@ package br.com.caelum.vraptor.entity;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Livro")
 public class Livro {
-	private String titulo;
-	private String descricao;
-	private String isbn;
-	private BigDecimal preco;
-	private Calendar dataPublicacao;
 	
+	@Id @GeneratedValue
+	private Long id;
+	
+	@Column(unique=true)
+	private String isbn;
+		
+	@Column(name="titulo")
+	private String titulo;
+	
+	@Column(name="descricao")
+	private String descricao;
+	
+	@Column(name="preco")
+	private BigDecimal preco;
+	
+	@Column(name="dataPublicacao")
+	private Calendar dataPublicacao;
+		
 	public String getTitulo() {
 		return titulo;
 	}
@@ -41,6 +62,11 @@ public class Livro {
 		this.dataPublicacao = dataPublicacao;
 	}
 	
-	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 }

@@ -21,7 +21,11 @@
 			<li>Preco: <br/>
 						<input type="text" name="livro.preco"value="${livro.preco}"/></li>
 			<li>Data de publicacao: <br/>
-						<input type="text" name="livro.dataPublicacao" value="${livro.dataPublicacao}"/></li>
+						<input type="text" name="livro.dataPublicacao" value="${livro.dataPublicacao}"/>
+						<input type="hidden" name="livro.id" value="${livro.id}" />
+			</li>
+						
+						
 		</ul>
 		<input type="submit" value="Salvar" />
 	</form>
