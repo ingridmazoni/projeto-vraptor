@@ -8,6 +8,7 @@
 	</classpathentry>
 	<classpathentry excluding="**" kind="src" output="Users/turini/Documents/workspace/vraptor4/vraptor-blank-project/src/main/webapp/WEB-INF/classes" path="src/main/resources">
 		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="livraria-adm/src/main/webapp/WEB-INF/lib"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
