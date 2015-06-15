@@ -1,13 +1,13 @@
 package br.com.caelum.vraptor.controller;
 
 import java.util.List;
-import br.com.caelum.vraptor.Resource;
+
+import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.estante.UmaEstanteNoBancoDeDados;
 import br.com.caelum.vraptor.entity.Livro;
 import br.com.caelum.vraptor.repository.Estante;
 
-@Resource
+@Controller
 public class LivroController {
 
 private  Estante estante;
